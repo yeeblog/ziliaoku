@@ -4,9 +4,9 @@
   - [二、在线工具](1.2.OnlineTool.md)
   - [三、网络资源](1.3.ResourceSearch.md)
 
-- 教程分享
+- 图书馆
 
-  - [教程分享](2.1.netResource.md)
+  - [计算机类](2.1.ComputerBook.md)
 
     
 
