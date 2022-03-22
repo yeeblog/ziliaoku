@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Yee的个人资源站，收集、整理、提炼所学的知识">
+    <meta name="keywords" content="wiki,docsify,音乐爱好者">
+    <meta name="author" content="Yee">
+    <title>Yee's Online</title>
+	<link rel="icon" href="https://s4.ax1x.com/2022/02/10/HYU2Xn.png" type="image/x-icon">
+    
+    <script type="text/javascript">  
+       loopy()  
+       function loopy() {  
+       var sWord =""  
+       while (sWord != "123") {//设置密码
+       sWord = prompt("密码不对哦!")  
+      }  
+       alert("Hello! This is Yee's Online")  
+      }  
+    </script> 
+	
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+    
+    <style>
+    .markdown-section strong {
+      color: rgb(239, 112, 96);
+    }
+
+    .app-nav{
+      position: fixed;
+      margin: 0;
+      padding: 10px 0 10px 0;
+      width: calc(100% - 325px);
+      background-color: #3f3f3f;
+      height: 52px;
+      //border-bottom: 1px solid #eee;
+    }
+	    
+    .markdown-section code {
+      border-radius: 2px;
+      font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+      font-size: 16px !important;
+      margin: 0 2px;
+      padding: 3px 5px;
+      white-space: nowrap;
+      border: 1px solid #282c34;
+      color: rgb(184, 101, 208);
+    }
+
+    .markdown-section > div > img, .markdown-section pre {
+      box-shadow: 2px 2px 20px 6px rgb(255, 255, 255) !important;
+    }
+
+    .markdown-section a:not(:hover) {
+      text-decoration: none;
+    }
+
+    h1 span{
+      display:inline-block;
+      background: rgb(58, 175, 140);
+      color:#ffffff;
+      padding:  10px  16px;
+      border-radius:5px;
+      box-shadow: 1px 1px 3px black;
+    }
+
+    p code{
+      background-color: rgb(255, 255, 255) !important;
+    }
+
+    .markdown-section p.tip,
+    .markdown-section tr:nth-child(1n) {
+      font-size: 16px !important;
+    }
+
+    .markdown-section h1 {
+      margin: 3rem 0 2rem 0;
+    }
+
+    .markdown-section h2 {
+      margin: 2rem 0 1rem;
+    }
+    img,
+    pre {
+      border-radius: 5px;
+    }
+
+    .docsify-copy-code-button {
+      background: #00a1d6 !important;
+      color: #FFFFFF !important;
+      font-size: 13px !important;
+    }
+
+    ::after{
+      color: #9da2fd !important;
+      font-size: 13px !important;
+    }
+    .markdown-section>p {
+      font-size: 16px !important;
+    }
+
+    .markdown-section pre:before {
+      content: '';
+      display: block;
+      background: url(https://gitee.com/wugenqiang/PictureBed/raw/master/images01/20200716201955.png);
+      height: 30px;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-color: #1C1C1C;
+      background-position: 10px 10px;
+    }
+
+    .markdown-section pre>code {
+      color: #c0c3c1 !important;
+      font-family: 'Inconsolata', consolas,"PingFang SC", "Microsoft YaHei", monospace !important;
+      background-color: #212121 !important;    //#accfff  #282c34
+      font-size: 15px !important;
+      white-space: pre !important;
+      line-height: 1.5 !important;
+      -moz-tab-size: 4 !important;
+      -o-tab-size: 4 !important;
+      tab-size: 4 !important;
+      /*border-radius: .3em;*/
+    }
+
+    ol, ul, li{
+      line-height: 27px !important;
+      font-size: 16px !important;
+    }
+    @media (min-width:600px) {
+      .markdown-section pre>code {
+        font-size: 15px !important;
+        letter-spacing: 1.1px !important;
+      }
+
+    }
+    @media (max-width:600px) {
+      .markdown-section pre>code {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 16px !important;
+      }
+      pre:after {
+        content: "" !important;
+      }
+    }
+    section.cover h1 {
+      margin: 0;
+    }
+
+    pre {
+      background-color: #212121 !important;
+    }
+
+    @media (min-width:600px) {
+      pre code {
+        padding-left: 20px !important;
+      }
+
+    }
+
+    @media (max-width:600px) {
+      pre {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        box-shadow: 0px 0px 20px 0px #f7f7f7 !important;
+      }
+
+      .docsify-copy-code-button {
+        display: none;
+      }
+
+      .advertisement{
+        display: none;
+      }
+
+    }
+
+    .markdown-section pre {
+      padding-left: 0 !important;
+      padding-right: 0px !important;
+    }
+
+    .markdown-section {
+      margin: 0 3.2% !important;
+    }
+
+    .token.directive.keyword{
+      color: #4faee2 !important;
+    }
+
+    .token.keyword{
+      color: #c678dd !important;
+    }
+
+    .token.comment{
+      color: #737c8b !important;
+    }
+
+    .token.tag{
+      color: #a589ad !important;
+    }
+
+    .token.attr-name{
+      color: #de916c !important;
+    }
+
+    .token.attr-value{
+      color: #4faee2 !important;
+    }
+
+    .token.macro.property{
+      color: #4faee2 !important;
+    }
+
+    .token.function{
+      color: #e6b456 !important;
+    }
+    .token.string{
+      color: #98b755 !important;
+    }
+    .token.punctuation{
+      color: #c0c3c1 !important;
+    }
+
+    .token.number{
+      color:#c0c3c1  !important;
+    }
+
+    a.section-link{
+      font-size: .9rem !important;
+    }
+
+    .advertisement {
+      position: fixed;
+      right: 20px;
+      top: 100px;
+      width: 110px;
+      box-shadow: -1px 0 2px 0px #c5ebda;
+      padding: 10px;
+      z-index: 99;
+      background-color: #3f3f3f;
+      text-align: center;
+    }
+
+    .advertisement p,
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .advertisement .Tencent_code h4 {
+      font-size: 15px;
+      color: #25a46a;
+      margin-bottom: 10px;
+    }
+	    
+    ::-webkit-scrollbar{width:5px;}
+    ::-webkit-scrollbar-thumb{
+      background: #33a9dc;
+      background-image: linear-gradient(#6ecd56, #33a9dc, #cb6196, #c16290);
+      border-radius: 2em;
+    }
+
+  </style>
+
+</head>
+<body>
+	<body leftmargin="30%" topmargin="30%" ></body>
+
+    <div id="app">🏃‍🏃‍🏃‍💨 很快！等我一下！</div>
+
+    <div class="aside_container">
+    <div class="advertisement">
+      <div class="Tencent_code">
+        <h4>加入QQ群</h4>
+         <p style="font-size: 12px;">扫我哦👇</p>
+         <img src="https://s4.ax1x.com/2022/02/20/HqRdAS.png" alt="EnjoyToShare" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+        window.$docsify = {
+            
+            loadNavbar: true,
+            loadSidebar: true,
+            subMaxLevel: 2,
+            auto2top: true,
+            homepage: '1.1.ReadStudy.md',
+            coverpage: true,
+            logo: '',
+            name: '回到首页',
+            nameLink: 'https://isshenye.xyz/#/',
+            noEmoji: true,
+            mergeNavbar: true,
+            notFoundPage: true,
+            topMargin: 90,
+
+            search: {
+                maxAge: 86400000,
+                paths: 'auto',
+                placeholder: '🔍想搜啥点这里',
+                noData: '找不到结果',
+                depth: 4,
+                hideOtherSidebarContent: false,
+                namespace: 'YeeOnline'
+            },
+
+            count:{
+                countable: true,
+                position: 'top',
+                margin: '10px',
+                float: 'right',
+                fontsize:'0.9em',
+                color:'rgb(255,255,255)',
+                language:'chinese',
+                localization: {
+                    words: "",
+                    minute: ""
+                },
+                isExpected: true
+            },
+
+            pagination: {
+                previousText: '上一卷',
+                nextText: '下一卷',
+                crossChapter: true,
+                crossChapterText: true
+            },
+
+            'flexible-alerts': {
+                style: 'flat',
+                note: {
+                    label: "信息"
+                },
+                tip: {
+                    label: "提示"
+                },
+                warning: {
+                    label: "注意"
+                },
+                attention: {
+                    label: "切记"
+                }
+            },
+            sidebarDisplayLevel: 2,
+
+			footer: {
+				//copy: '<div class = "over" >完结</div><br/><span>我能想到最浪漫的事，就是我喝咖啡你付钱~😆😏 ❤️ 打赏地址：<a href="https://wugenqiang.js.org/sponsor/" target="_blank">https://wugenqiang.js.org/sponsor/</a></span><iframe src="https://wugenqiang.js.org/sponsor/" style="overflow-x:hidden;overflow-y:hidden; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe><br/><span id="sitetime"></span><br/><span>Copyright &copy; 2022 - 至今</span>',
+				copy: '<br/><span>一期一会~😆😏 </span><br/><span id="sitetime"></span><br/><span>Copyright &copy; 2022 - 至今</span>',
+				auth: ' <a href="http://199529.xyz" target="_blank">🏷️ 即刻资源网</a> <span> 一个人可以走的很快，但一群人才能走的更远！</span>',
+				pre: '<hr/>',
+				style: 'text-align: left;',
+			},
+									
+        };
+    </script>
+	
+    <canvas></canvas>
+    <script>
+	    document.addEventListener('touchmove', function (e) {
+		e.preventDefault()
+	    })
+	    var c = document.getElementsByTagName('canvas')[0],
+		x = c.getContext('2d'),
+		pr = window.devicePixelRatio || 1,
+		w = window.innerWidth,
+		h = window.innerHeight,
+		f = 90,
+		q,
+		m = Math,
+		r = 0,
+		u = m.PI*2,
+		v = m.cos,
+		z = m.random
+	    c.width = w*pr
+	    c.height = h*pr
+	    x.scale(pr, pr)
+	    x.globalAlpha = 0.6
+	    function i(){
+		x.clearRect(0,0,w,h)
+		q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
+		while(q[1].x<w+f) d(q[0], q[1])
+	    }
+	    function d(i,j){   
+		x.beginPath()
+		x.moveTo(i.x, i.y)
+		x.lineTo(j.x, j.y)
+		var k = j.x + (z()*2-0.25)*f,
+		    n = y(j.y)
+		x.lineTo(k, n)
+		x.closePath()
+		r-=u/-50
+		x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
+		x.fill()
+		q[0] = q[1]
+		q[1] = {x:k,y:n}
+	    }
+	    function y(p){
+		var t = p + (z()*2-1.1)*f
+		return (t>h||t<0) ? y(p) : t
+	    }
+	    document.onclick = i
+	    document.ontouchstart = i
+	    i()
+    </script>
+	
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-footer-enh.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		  $.goup({
+			trigger: 100,
+			bottomOffset: 52,
+			locationOffset: 25,
+			//title: 'TOP',
+			titleAsText: true
+		  });
+		});
+	</script>
+	<script>
+		((window.gitter = {}).chat = {}).options = {
+			room: 'YeeBlog/YeeBlog'
+		};
+	</script>
+	<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/sidecar.v1.js" async defer></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/click_heart.js"></script>
+
+	<script src="//cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
+   
+	<script language=javascript>
+		  function siteTime() {
+			 window.setTimeout("siteTime()", 1000);
+			 var seconds = 1000;
+			 var minutes = seconds * 60;
+			 var hours = minutes * 60;
+			 var days = hours * 24;
+			 var years = days * 365;
+			 var today = new Date();
+			 var todayYear = today.getFullYear();
+			 var todayMonth = today.getMonth() + 1;
+			 var todayDate = today.getDate();
+			 var todayHour = today.getHours();
+			 var todayMinute = today.getMinutes();
+			 var todaySecond = today.getSeconds();
+			 var t1 = Date.UTC(2022, 02, 01, 0, 0, 0); 
+			 var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+			 var diff = t2 - t1;
+			 var diffYears = Math.floor(diff / years);
+			 var diffDays = Math.floor((diff / days) - diffYears * 365);
+			 var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+			 var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+			 var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+			 document.getElementById("sitetime").innerHTML = " 本站已安全运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分 " + diffSeconds + " 秒 ";
+		  }
+		  siteTime();
+	</script>
+
+	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+	<script>
+	  L2Dwidget.init({
+	    "model": {
+	       jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+	      "scale": 1
+	    },
+	    "display": {
+	      "position": "right", 
+	      "width": 70,  
+	      "height": 140, 
+	      "hOffset": 35,
+	      "vOffset": -20
+	    },
+	    "mobile": {
+	      "show": true,
+	      "scale": 0.5
+	    },
+	    "react": {
+	      "opacityDefault": 0.7,
+	      "opacityOnHover": 0.2
+	    }
+	  });
+	</script> 
+
+	<script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript"></script>
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('pwa.js')
+    }
+  </script>
+  
+  <script type="text/javascript">
+          window.onload = function() {
+              document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+            if(e.keyCode == 123) {
+            console.log('本网站欢迎您！');
+                return false;
+             }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+              console.log('当前提示，本网站禁止审查元素');
+                return false;
+		}else if((e.ctrlKey) && (e.keyCode == 85)){
+		console.log('本网站禁止使用审查元素')
+		return false;
+					 }else if((e.shiftKey) && (e.keyCode == 121)){
+						console.log('本网站禁止审查元素！');
+		return false;
+					 }else if(event.ctrlKey  &&  window.event.keyCode==83 ){ 
+						console.log('本网站禁止保存文件！');
+						return false;
+					 }
+					 };
+		if (window.Event)
+		document.captureEvents(Event.MOUSEUP);
+		function nocontextmenu()
+		{
+		event.cancelBubble = true
+		event.returnValue = false;
+		return false;
+		}
+		function norightclick(e)
+		{if (window.Event)
+		{
+		if (e.which == 2 || e.which == 3)
+		return false;
+		}
+		else
+		if (event.button == 2 || event.button == 3)
+		{
+		event.cancelBubble = true
+		event.returnValue = false;
+		return false;
+		}
+		}
+		document.oncontextmenu = nocontextmenu; // for IE5+
+		document.onmousedown = norightclick; // for all others
+				 }
+    </script>
+</body>
+</html>
