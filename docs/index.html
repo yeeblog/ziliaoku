@@ -282,10 +282,10 @@
     }
 
     .advertisement {
-      position: fixed;
+      position: absolute;
       right: 20px;
-      top: 800px;
-      width: 200px;
+      top: 500px;
+      width: 150px;
       box-shadow: -1px 0 2px 0px #c5ebda;
       padding: 10px;
       z-index: 99;
@@ -328,6 +328,7 @@
   <!-- 定义加载时的显示 -->
   <div id="app">🏃‍🏃‍🏃‍💨 很快！等我一下！</div>
 
+  <!-- 广告栏 -->>
   <div class="aside_container">
     <div class="advertisement">
       <div class="Tencent_code">
@@ -440,10 +441,10 @@
       },
 
       //目录跳转
-      toc: { 
-        scope: '.markdown-section', 
-        headings: 'h1, h2', 
-        title: '点击跳转', 
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2',
+        title: '点击跳转',
       },
     };
   </script>
@@ -563,7 +564,7 @@
         "vOffset": -20
       },
       "mobile": {
-        "show": true,
+        "show": false,
         "scale": 0.5
       },
       "react": {
