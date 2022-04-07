@@ -19,7 +19,7 @@
 👀    本站总访问量 <span id="busuanzi_value_site_pv"></span>次
 </span>| 🐒本站访客数<span id="busuanzi_value_site_uv"></span>人次
 
-[点击](/1.1.ReadStudy.md)
+[点击](/README.md)
 
 <!--封面-->
 ![](http://tva1.sinaimg.cn/large/005Fu5y5gy1gzn9rnm9i3j30xc0irgnu.jpg)
