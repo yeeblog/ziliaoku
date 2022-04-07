@@ -3,7 +3,7 @@
 -->
 <!--一些描述-->
 
-<div style="font-size:31px;font-weight:bold;">QingYEJI</div>
+<div style="font-size:31px;font-weight:bold;">Qing & YE</div>
 
 <div style="font-size:30px;font-weight:bold;">青叶集·QingYEJI</div>
 
